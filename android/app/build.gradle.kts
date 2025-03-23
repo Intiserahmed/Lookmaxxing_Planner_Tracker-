@@ -8,7 +8,7 @@ plugins {
 android {
     namespace = "com.example.lookmax"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "25.2.9519653"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -20,11 +20,8 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.example.lookmax"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
+        minSdk = 24
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
@@ -32,11 +29,22 @@ android {
 
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.getByName("debug")
         }
     }
+}
+
+// Store custom property in Kotlin DSL:
+extra["ASSET_DIR"] = "${projectDir}/src/main/assets"
+
+//// Apply another gradle script in Kotlin DSL:
+//apply(from = "download_tasks.gradle")
+
+dependencies {
+    // MediaPipe library (replace with a version that exists, e.g. 0.10.3 or 0.10.14 if it’s published)
+    implementation("com.google.mediapipe:tasks-vision:0.10.14")
+    implementation("androidx.camera:camera-core:1.4.1")
+    implementation("androidx.appcompat:appcompat:1.7.0")
 }
 
 flutter {
