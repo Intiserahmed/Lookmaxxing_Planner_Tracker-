@@ -1,16 +1,20 @@
-# lookmax
+# Lookmax
 
-A new Flutter project.
+Lookmax is a cross‑platform Flutter application dedicated to helping users enhance their appearance with objective feedback on facial features. By leveraging advanced computer vision techniques, Lookmax detects key facial landmarks and provides personalized insights and recommendations for self-improvement.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Selfie Capture & Image Selection:**  
+  Easily capture a new selfie using your device’s camera or select an existing image from your gallery.
 
-A few resources to get you started if this is your first Flutter project:
+- **Facial Landmark Detection:**  
+  Advanced native integrations on both iOS and Android extract key facial landmarks using MediaPipe’s cutting‑edge technology.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Glow Score Calculation:**  
+  The app computes a “glow score” based on facial symmetry and proportions to offer objective feedback on one’s appearance.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Progress Tracking (Upcoming):**  
+  Future iterations will enable users to monitor improvements over time.
+
+- **Intuitive Cross‑Platform Experience:**  
+  Built with Flutter, ensuring a consistent and smooth experience on both iOS and Android devices.
