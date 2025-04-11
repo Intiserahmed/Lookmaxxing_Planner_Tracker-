@@ -1,4 +1,4 @@
-# Lookmax
+# Lookmaxxing_Planner_Tracker
 
 Lookmax is a cross‑platform Flutter application dedicated to helping users enhance their appearance with objective feedback on facial features. By leveraging advanced computer vision techniques, Lookmax detects key facial landmarks and provides personalized insights and recommendations for self-improvement.
 
